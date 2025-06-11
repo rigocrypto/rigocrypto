@@ -37,5 +37,3 @@ I’m the founder of CropFolioCoin — a decentralized ecosystem bridging agricu
 
 Let’s build the future, one block at a time. 🚀
 
-Let me know if you'd like to add badges, GitHub stats, or an image/banner to make it more visually engaging!
-
