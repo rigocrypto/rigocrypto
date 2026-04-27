@@ -8,7 +8,15 @@ type LogoProps = {
 }
 
 const Logo = ({ size = 'md', className = '' }: LogoProps) => {
-  const [src, setSrc] = useState('/gmx-labs-logo.jpg')
+  const base = import.meta.env.BASE_URL
+  const logoCandidates = [
+    `${base}gmx-labs-logo.jpg`,
+    `${base}GMX-logo.jpg`,
+    `${base}LuxChain Logo.jpg`,
+    `${base}public/GMX-logo.jpg`,
+    `${base}public/LuxChain Logo.jpg`,
+  ]
+  const [logoIndex, setLogoIndex] = useState(0)
 
   const sizeMap: Record<LogoSize, number> = {
     sm: 40,
@@ -21,12 +29,12 @@ const Logo = ({ size = 'md', className = '' }: LogoProps) => {
 
   return (
     <img
-      src={src}
+      src={logoCandidates[logoIndex]}
       alt="GMX Labs logo"
       width={pixelSize}
       height={pixelSize}
       className={className}
-      onError={() => setSrc('/LuxChain Logo.jpg')}
+      onError={() => setLogoIndex((prev) => Math.min(prev + 1, logoCandidates.length - 1))}
       style={{ borderRadius: '10px', objectFit: 'cover' }}
     />
   )
