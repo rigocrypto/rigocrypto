@@ -12,9 +12,9 @@ export const languageLabels: Record<Language, string> = {
 
 export const languageNames: Record<Language, string> = {
   en: 'English',
-  es: 'Espanol',
-  fr: 'Francais',
-  pt: 'Portugues',
+  es: 'Español',
+  fr: 'Français',
+  pt: 'Português',
 }
 
 type ServiceItem = {
@@ -380,7 +380,7 @@ export const translations: Record<Language, Translation> = {
       trustAriaLabel: 'Puntos de confianza',
       trustPoints: ['Entrega orientada a seguridad', 'Arquitectura lista para auditoria', 'Ejecucion enfocada en produccion'],
       primaryCta: 'Reservar llamada estrategica',
-      secondaryCta: 'Solicitar assessment tecnico',
+      secondaryCta: 'Solicitar evaluación técnica',
       stackCards: ['Web2', 'Web3', 'IA', 'Blockchain'],
     },
     services: {
@@ -395,7 +395,7 @@ export const translations: Record<Language, Translation> = {
           title: 'Ingenieria Web3 y Smart Contracts',
           description: 'Arquitectura segura de protocolos y sistemas de contratos inteligentes listos para auditoria.',
           points: [
-            'Smart contracts seguros con arquitectura audit-ready',
+            'Smart contracts seguros con arquitectura preparada para auditoria',
             'Protocolos DeFi para trading, staking y liquidez',
             'Sistemas de tokens y gobernanza on-chain',
             'Integracion de wallets y dApps',
@@ -450,7 +450,7 @@ export const translations: Record<Language, Translation> = {
       titleAccent: 'entrega Web3',
       items: [
         { icon: '🧠', title: 'Ingenieria DeFi real', text: 'Equipo con experiencia real en smart contracts y sistemas DeFi.' },
-        { icon: '🛡️', title: 'Mentalidad security-first', text: 'Diseniamos como defensores y pensamos como atacantes.' },
+        { icon: '🛡️', title: 'Seguridad como prioridad', text: 'Diseniamos como defensores y pensamos como atacantes.' },
         { icon: '🏗️', title: 'Sistemas de produccion', text: 'Entregamos sistemas mantenibles, no prototipos fragiles.' },
         { icon: '⚡', title: 'Rapidez con calidad', text: 'Ejecucion veloz sin sacrificar auditabilidad ni calidad de codigo.' },
       ],
@@ -489,7 +489,7 @@ export const translations: Record<Language, Translation> = {
           title: 'Infraestructura de activos tokenizados',
           text: 'Arquitectura de contratos y backend para ecosistemas tokenizados.',
           stack: 'Solidity, TypeScript, React, AWS',
-          impact: 'Acelero readiness de lanzamiento con trazabilidad y seguridad.',
+          impact: 'Acelero la preparación para el lanzamiento con trazabilidad y seguridad.',
         },
         {
           title: 'Motor de operaciones con IA',
@@ -516,7 +516,7 @@ export const translations: Record<Language, Translation> = {
       titleAccent: 'IA',
       titleTail: '?',
       description: 'Revisemos tu arquitectura y definamos un plan de implementacion claro.',
-      trust: 'Soporte tecnico para founders, CTOs y equipos de producto.',
+      trust: 'Soporte tecnico para fundadores, CTOs y equipos de producto.',
       primaryCta: 'Reservar llamada estrategica',
       secondaryCta: 'Solicitar estimacion',
       statsAriaLabel: 'Metricas de la compania',
@@ -562,7 +562,7 @@ export const translations: Record<Language, Translation> = {
       trustAriaLabel: 'Points de confiance',
       trustPoints: ['Livraison orientee securite', 'Architecture prete pour audit', 'Execution orientee production'],
       primaryCta: 'Reserver un appel strategique',
-      secondaryCta: 'Demander un assessment technique',
+      secondaryCta: 'Demander une évaluation technique',
       stackCards: ['Web2', 'Web3', 'IA', 'Blockchain'],
     },
     services: {
@@ -577,13 +577,13 @@ export const translations: Record<Language, Translation> = {
           title: 'Ingenierie Web3 et Smart Contracts',
           description: 'Architecture de protocoles securises et systemes de smart contracts prets pour audit.',
           points: [
-            'Smart contracts securises avec architecture audit-ready',
+            'Smart contracts securises avec architecture prête pour l audit',
             'Protocoles DeFi pour trading, staking et liquidite',
             'Systemes de tokens et gouvernance on-chain',
             'Integration wallet et dApps',
             'Conception interoperabilite cross-chain',
           ],
-          ctaLabel: 'Definir le scope technique',
+          ctaLabel: 'Définir le périmètre technique',
         },
         {
           accent: 'service-card-cyan',
@@ -597,7 +597,7 @@ export const translations: Record<Language, Translation> = {
             'Pipelines data et dashboards analytiques',
             'Automatisation de workflows a l echelle',
           ],
-          ctaLabel: 'Definir le scope technique',
+          ctaLabel: 'Définir le périmètre technique',
         },
         {
           accent: 'service-card-blue',
@@ -608,9 +608,9 @@ export const translations: Record<Language, Translation> = {
             'Applications web robustes et dashboards',
             'Architecture API et integrations tierces',
             'Plateformes SaaS et outils internes',
-            'Infrastructure cloud et delivery DevOps',
+            'Infrastructure cloud et livraison DevOps',
           ],
-          ctaLabel: 'Definir le scope technique',
+          ctaLabel: 'Définir le périmètre technique',
         },
       ],
     },
@@ -671,7 +671,7 @@ export const translations: Record<Language, Translation> = {
           title: 'Infrastructure actifs tokenises',
           text: 'Architecture smart contracts et backend pour ecosystemes tokenises.',
           stack: 'Solidity, TypeScript, React, AWS',
-          impact: 'Acceleration de la readiness de lancement avec securite accrue.',
+          impact: 'Acceleration de la préparation au lancement avec securite accrue.',
         },
         {
           title: 'Moteur operations IA',
@@ -742,9 +742,9 @@ export const translations: Record<Language, Translation> = {
       titleAccent: 'Web3 e IA para producao.',
       description: 'Da arquitetura ao deploy, desenhamos, desenvolvemos e auditamos sistemas prontos para escalar.',
       trustAriaLabel: 'Pontos de confianca',
-      trustPoints: ['Entrega com foco em seguranca', 'Arquitetura audit-ready', 'Execucao orientada a producao'],
+      trustPoints: ['Entrega com foco em seguranca', 'Arquitetura preparada para auditoria', 'Execucao orientada a producao'],
       primaryCta: 'Agendar call estrategica',
-      secondaryCta: 'Solicitar assessment tecnico',
+      secondaryCta: 'Solicitar avaliação técnica',
       stackCards: ['Web2', 'Web3', 'IA', 'Blockchain'],
     },
     services: {
@@ -759,7 +759,7 @@ export const translations: Record<Language, Translation> = {
           title: 'Engenharia Web3 e Smart Contracts',
           description: 'Arquitetura segura de protocolos e contratos inteligentes prontos para auditoria.',
           points: [
-            'Smart contracts seguros com arquitetura audit-ready',
+            'Smart contracts seguros com arquitetura preparada para auditoria',
             'Protocolos DeFi para trading, staking e liquidez',
             'Sistemas de token e governanca on-chain',
             'Integracao de wallets e dApps',
@@ -853,7 +853,7 @@ export const translations: Record<Language, Translation> = {
           title: 'Infraestrutura de ativos tokenizados',
           text: 'Arquitetura de contratos e backend para ecossistemas tokenizados.',
           stack: 'Solidity, TypeScript, React, AWS',
-          impact: 'Acelerou readiness de lancamento com seguranca reforcada.',
+          impact: 'Acelerou a preparação para lancamento com seguranca reforcada.',
         },
         {
           title: 'Motor de operacoes com IA',
@@ -880,7 +880,7 @@ export const translations: Record<Language, Translation> = {
       titleAccent: 'IA',
       titleTail: '?',
       description: 'Vamos discutir sua arquitetura e definir uma implementacao pragmatica.',
-      trust: 'Suporte tecnico para founders, CTOs e times de produto.',
+      trust: 'Suporte tecnico para fundadores, CTOs e times de produto.',
       primaryCta: 'Agendar call estrategica',
       secondaryCta: 'Solicitar estimativa',
       statsAriaLabel: 'Metricas da empresa',
