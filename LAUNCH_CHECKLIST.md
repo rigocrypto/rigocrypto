@@ -1,77 +1,91 @@
 # GMX Labs Launch Checklist
 
-Use this checklist for final pre-launch QA and repeatable handoff.
+Launch status model used in this file:
+- Done
+- Needs Fix
+- Blocked
+- Not Applicable
+
+Audit date: 2026-05-01
+Current release decision: Soft No-Go
 
 ## 1. Replace Placeholder Values
-Update all placeholder values before production deploy:
-- Site URL: `https://www.gmxlabs.example/`
-- OG image URL: `https://www.gmxlabs.example/og/gmx-labs-preview.jpg`
-- Contact email: `hello@gmxlabs.example`
-- Phone: `+1-000-000-0000`
-- Social links in JSON-LD (`sameAs`)
-- Twitter handle in metadata (`twitter:site`)
-- Calendly placeholder links in page CTAs
+- Done: Site URL placeholder replacement in runtime files.
+- Done: OG image URL placeholder replacement in runtime files.
+- Done: Contact email placeholder replacement in runtime files.
+- Done: Phone placeholder replacement in runtime files.
+- Done: Social links in JSON-LD are real profiles.
+- Done: Twitter handle in metadata is set.
+- Needs Fix: Calendly links require production click validation.
 
 ## 2. OG Preview Asset
-- Create: `public/og/gmx-labs-preview.jpg`
-- Confirm dimensions: `1200 x 630`
-- Confirm file opens at production URL after deploy
+- Done: File exists at public/og/gmx-labs-preview.jpg.
+- Needs Fix: Confirm dimensions are exactly 1200 x 630.
+- Blocked: Confirm asset opens on deployed production URL.
 
 ## 3. Domain + Metadata Validation
-Check in deployed HTML source:
-- `<title>` is final and branded
-- `<meta name="description">` is final
-- `<link rel="canonical">` matches live domain
-- `og:url` matches canonical URL
-- `og:image` points to existing asset
-- `twitter:image` points to existing asset
+- Done: title is present and branded in source.
+- Done: meta description is present in source.
+- Done: canonical is set in source.
+- Done: og:url is set in source.
+- Done: og:image is set in source.
+- Done: twitter:image is set in source.
+- Blocked: Validate these values in deployed page source.
 
 ## 4. robots + Sitemap Validation
-- Verify `/robots.txt` returns `200`
-- Verify `/sitemap.xml` returns `200`
-- Confirm `robots.txt` includes correct sitemap URL
-- Confirm sitemap `loc` uses final domain
+- Done: robots.txt file exists and includes sitemap URL.
+- Done: sitemap.xml file exists and contains loc.
+- Blocked: Verify /robots.txt returns 200 on deployed URL.
+- Blocked: Verify /sitemap.xml returns 200 on deployed URL.
+- Blocked: Confirm deployed sitemap loc matches final live domain.
 
 ## 5. Functional QA
-- Test all nav anchor links
-- Test CTA buttons (email, Calendly, purchase links)
-- Test footer links
-- Confirm no broken routes/assets in browser devtools network tab
+- Blocked: Test all nav anchor links manually in browser.
+- Blocked: Test CTA buttons (email, Calendly, purchase links) in deployed environment.
+- Blocked: Test footer links manually.
+- Blocked: Confirm no broken routes/assets via devtools network tab.
 
 ## 6. Mobile + Browser QA
-- Validate key breakpoints (mobile/tablet/desktop)
-- Check typography and button readability on mobile
-- Check sticky header behavior on mobile
-- Test at least one Chromium browser + one WebKit browser
+- Blocked: Validate key breakpoints (mobile/tablet/desktop).
+- Blocked: Check typography and button readability on mobile.
+- Blocked: Check sticky header behavior on mobile.
+- Blocked: Test at least one Chromium browser and one WebKit browser.
 
 ## 7. Accessibility + SEO QA
-- One H1 on page
-- Logical H2/H3 hierarchy
-- Meaningful alt text for major images/logo
-- Keyboard focus visible for links/buttons
-- Language and viewport tags present
+- Needs Fix: Confirm exactly one H1 in final rendered page.
+- Needs Fix: Confirm logical H2/H3 hierarchy in rendered page.
+- Needs Fix: Confirm meaningful alt text coverage for major images/logo.
+- Blocked: Verify keyboard focus visibility manually.
+- Done: Language and viewport tags are present in source.
 
 ## 8. Performance QA
-Run Lighthouse on production URL and target:
-- Performance: `90+`
-- SEO: `95+`
-- Accessibility: `90+`
-- Best Practices: `90+`
-
-If scores are low:
-- Compress large images
-- Convert heavy PNG/JPG assets to WebP when appropriate
-- Reduce unused font weights
+- Blocked: Lighthouse Performance target 90+ on production URL.
+- Blocked: Lighthouse SEO target 95+ on production URL.
+- Blocked: Lighthouse Accessibility target 90+ on production URL.
+- Blocked: Lighthouse Best Practices target 90+ on production URL.
+- Not Applicable: Optimization fallback actions until Lighthouse reveals a gap.
 
 ## 9. Search Engine Submission
-After deploy:
-- Add property in Google Search Console
-- Add property in Bing Webmaster Tools
-- Submit sitemap URL in both tools
+- Not Applicable: Google Search Console property submission before final Go decision.
+- Not Applicable: Bing Webmaster Tools property submission before final Go decision.
+- Not Applicable: Sitemap submission before final Go decision.
 
 ## 10. Post-Launch Distribution
-Within 24 hours of launch:
-- Publish at least 1 LinkedIn post
-- Publish at least 1 X post
-- Share landing page with targeted founder/operator contacts
-- Monitor click-through and CTA conversion behavior
+- Not Applicable: LinkedIn/X/distribution tasks before launch approval.
+- Not Applicable: Outreach and conversion monitoring before launch approval.
+
+## Final release decision
+Decision: Soft No-Go
+
+Reason:
+- Manual QA is incomplete.
+- Production smoke testing is incomplete.
+- Lighthouse/performance checks are incomplete.
+- Checklist sign-off is not fully complete.
+
+Exit criteria to change decision to Go:
+1. Deploy production candidate URL.
+2. Complete manual functional/mobile/browser smoke test and record results.
+3. Run Lighthouse on production URL and meet targets.
+4. Re-check links, robots, sitemap, OG preview, canonical values on live site.
+5. Update this checklist and QA_REPORT.md with completed evidence.
