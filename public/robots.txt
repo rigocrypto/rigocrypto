@@ -2,5 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://rigocrypto.github.io/GMX-Labs/sitemap.xml
-
-
