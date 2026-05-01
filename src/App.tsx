@@ -75,6 +75,12 @@ function App() {
               ))}
             </ul>
 
+            <div className="pill-row hero-badges" aria-label={t.hero.badgesAriaLabel}>
+              {t.hero.badges.map((badge) => (
+                <span className="industry-pill" key={badge}>{badge}</span>
+              ))}
+            </div>
+
             <div className="hero-ctas">
               <a className="btn btn-primary" href={CALENDLY_LINK}>
                 {t.hero.primaryCta}
@@ -100,6 +106,17 @@ function App() {
             <div className="stack-card stack-web3">{t.hero.stackCards[1]}</div>
             <div className="stack-card stack-ai">{t.hero.stackCards[2]}</div>
             <div className="stack-card stack-blockchain">{t.hero.stackCards[3] ?? t.hero.blockchainLabel}</div>
+          </div>
+        </section>
+
+        <section className="section reveal" id="web2web3">
+          <p className="section-eyebrow">{t.web2web3.eyebrow}</p>
+          <h2>{t.web2web3.title}</h2>
+          <p className="section-subtitle">{t.web2web3.description}</p>
+          <div className="pill-row">
+            {t.web2web3.items.map((item) => (
+              <span className="industry-pill" key={`${language}-${item}`}>{item}</span>
+            ))}
           </div>
         </section>
 
