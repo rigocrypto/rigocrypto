@@ -27,3 +27,7 @@ dist-ssr
 Futuristic LuxChain Mobile Interface.png
 GMX-logo.jpg
 LuxChain Logo.jpg
+
+# Lighthouse local artifacts
+lighthouse-report.json
+*.lhr.json
