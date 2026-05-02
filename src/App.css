@@ -650,6 +650,16 @@ h1 {
   background: #000;
 }
 
+.web2web3-img {
+  width: 100%;
+  max-width: 860px;
+  height: auto;
+  border-radius: 0.72rem;
+  margin-bottom: 1.4rem;
+  display: block;
+  margin-inline: auto;
+}
+
 .industries-note {
   text-align: center;
 }

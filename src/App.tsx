@@ -110,14 +110,10 @@ function App() {
         </section>
 
         <section className="section reveal" id="web2web3">
-          <video
-            className="web2web3-video"
-            src="/GMX-Labs/Video1.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            aria-hidden="true"
+          <img
+            className="web2web3-img"
+            src={`${import.meta.env.BASE_URL}GMX-Labs-flyer2.jpg`}
+            alt="Web2 to Web3 + AI — Apps, DApps, Blockchain, Payments"
           />
           <p className="section-eyebrow">{t.web2web3.eyebrow}</p>
           <h2>{t.web2web3.title}</h2>
