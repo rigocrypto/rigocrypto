@@ -176,7 +176,9 @@ These represent ~2.5 seconds of potential optimization and ~1.2 MiB of payload r
 ---
 
 ## Final release decision
-Decision: Soft No-Go (Lighthouse scores pass; awaiting stakeholder sign-off)
+Decision: **Go** ✅
+
+Approval: Stakeholder sign-off received — May 1, 2026
 
 Reason:
 - ✅ Commit 4681364 successfully deployed to live URL.

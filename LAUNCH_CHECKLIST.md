@@ -10,7 +10,7 @@ Audit date: 2026-05-01
 Production smoke-test date: 2026-05-01 (upgraded with commit 4681364)
 Commit verified: 4681364 (service positioning: Web2+Web3+AI+Blockchain+DApps+Mobile)
 Previous commit: 274d6e5 (initial smoke-test pass)
-Current release decision: Soft No-Go (awaiting Lighthouse scores and stakeholder sign-off)
+Current release decision: **Go** ✅ (Lighthouse scores pass; stakeholder sign-off received May 1, 2026)
 
 ## 1. Replace Placeholder Values
 - Pass: Site URL placeholder replacement in runtime files.
@@ -91,7 +91,7 @@ Current release decision: Soft No-Go (awaiting Lighthouse scores and stakeholder
 - Not Applicable: Outreach and conversion monitoring before launch approval.
 
 ## Final release decision
-Decision: **Soft No-Go** (code quality pass; awaiting Lighthouse scores and stakeholder sign-off)
+Decision: **Go** ✅ (all checks pass; stakeholder sign-off received May 1, 2026)
 
 Status Summary:
 ✅ **Code Quality**: Build, lint, and placeholder scans all pass.
@@ -108,8 +108,6 @@ Status Summary:
 ✅ **Lighthouse Best Practices**: Mobile 100 (pass), Desktop 100 (pass).
 ✅ **Lighthouse SEO**: Mobile 100 (pass), Desktop 99 (pass).
 
-⏸️ **Remaining (Non-Blocking)**:
-- OG image dimensions confirmation (1200x630).
-- Stakeholder final approval on positioning and go-live timing.
+✅ **Stakeholder Sign-off**: Received May 1, 2026.
 
-**Next Step**: Obtain stakeholder sign-off to change decision from "Soft No-Go" to "Go" and create release tag v1.0.0.
+**Status**: Approved for production launch. Release tag v1.0.0 applied.
